@@ -2,18 +2,23 @@ import React from "react";
 //import Product from "./Product";
 import { ProductContext } from "../../context/products";
 import Filters from "./Filters";
+import PageProducts from "./PageProducts";
+
 import { Link } from 'react-router-dom'
 import PropTypes from "prop-types";
 
 
 export default function ProductList() {
 
-  const { products } = React.useContext(
-    ProductContext
-  );
+  const { products } = React.useContext(ProductContext);
+
   return (
     <>
-    <Filters />
+
+<Filters />
+
+
+
     <section className="section">
       <h2 className="section-title"></h2>
       <div className="products-center">
@@ -24,7 +29,7 @@ export default function ProductList() {
     <img src={post.image} alt={post.title || "default title"} />
     <Link to={`products/${post._id}`} className="btn btn-primary product-link">
           details
-      </Link>
+    </Link>
   
   </div>
   <div className="product-footer">
@@ -34,6 +39,9 @@ export default function ProductList() {
 </article>))}
       </div>
     </section>
+
+
+ 
     </>
   );
 

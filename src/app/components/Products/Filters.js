@@ -3,7 +3,7 @@ import { ProductContext } from "../../context/products";
 export default function Filters() {
   const {
     filters: { search, category, shipping, price },
-    updateFilters,
+    updateFilters
     //sorted
   } = useContext(ProductContext);
   return (
@@ -11,6 +11,8 @@ export default function Filters() {
       <h2 className="section-title">search products</h2>
       <form className="filters-form">
         <div>
+
+
           {/* search input */}
           <div className="form-group">
             <label htmlFor="search">search term</label>
@@ -22,9 +24,17 @@ export default function Filters() {
               value={search}
               onChange={updateFilters}
             />
-            
           </div>
           {/* end of search form */}
+
+
+
+
+
+
+
+
+
           {/* select category */}
           <div className="form-group">
             <label htmlFor="category">category</label>
@@ -35,13 +45,21 @@ export default function Filters() {
               value={category}
               onChange={updateFilters}
             >
-              <option value="all">all</option>
-              <option value="phone">phone</option>
-              <option value="computer">computer</option>
-              <option value="radio">radio</option>
+              <option value="todos">todos</option>
+              <option value="cuadro">cuadros</option>
+              <option value="bandeja">bandejas</option>
+              <option value="adorno">adornos</option>
             </select>
           </div>
           {/* end of category */}
+
+
+
+
+
+
+
+
           {/* free shipping */}
           <div className="form-group">
             <input
@@ -53,8 +71,15 @@ export default function Filters() {
             />
             <label htmlFor="shipping">free shipping</label>
           </div>
-          {/* end of free shipping */}
         </div>
+        {/* end of free shipping */}
+
+
+
+
+
+
+
         {/* price */}
         <div className="price-group">
           <p>price</p>
@@ -62,12 +87,12 @@ export default function Filters() {
             <input
               type="radio"
               name="price"
-              id="all"
-              value="all"
-              checked={price === "all"}
+              id="todos"
+              value="todos"
+              checked={price === "todos"}
               onChange={updateFilters}
             />
-            all
+            todos
           </label>
           <label>
             <input
@@ -77,27 +102,27 @@ export default function Filters() {
               checked={price === 0}
               onChange={updateFilters}
             />
-            $0 - $300
+            $0 - $2000
           </label>
           <label>
             <input
               type="radio"
               name="price"
-              value="300"
-              checked={price === 300}
+              value="2000"
+              checked={price === 2000}
               onChange={updateFilters}
             />
-            $300 - $650
+            $2000 - $5000
           </label>
           <label>
             <input
               type="radio"
               name="price"
-              value="650"
-              checked={price === 650}
+              value="5000"
+              checked={price === 5000}
               onChange={updateFilters}
             />
-            Over $650
+            Over $5000
           </label>
         </div>
         {/* end of price   :{sorted.flat().length}  */}

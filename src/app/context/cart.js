@@ -32,27 +32,27 @@ function CartProvider({ children }) {
   }, [cart]);
 
   // remove item
-  const removeItem = id => {
-    dispatch({ type: REMOVE, payload: id });
+  const removeItem = _id => {
+    dispatch({ type: REMOVE, payload: _id });
   };
   // increase amount
-  const increaseAmount = id => {
-    dispatch({ type: INCREASE, payload: id });
+  const increaseAmount = _id => {
+    dispatch({ type: INCREASE, payload: _id });
   };
   // decrease amount
-  const decreaseAmount = (id, amount) => {
+  const decreaseAmount = (_id, amount) => {
     if (amount === 1) {
-      dispatch({ type: REMOVE, payload: id });
+      dispatch({ type: REMOVE, payload: _id });
       return;
     } else {
-      dispatch({ type: DECREASE, payload: id });
+      dispatch({ type: DECREASE, payload: _id });
     }
   };
   // add to cart
   const addToCart = product => {
-    let item = [...cart].find(item => item.id === product.id);
+    let item = [...cart].find(item => item._id === product._id);
     if (item) {
-      dispatch({ type: INCREASE, payload: product.id });
+      dispatch({ type: INCREASE, payload: product._id });
     } else {
       dispatch({ type: ADD_TO_CART, payload: product });
     }

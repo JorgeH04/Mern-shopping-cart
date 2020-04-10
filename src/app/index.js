@@ -7,10 +7,9 @@ import  {CartProvider}  from "./context/cart";
 
 render(
 <ProductProvider>
-<CartProvider>
-
+  <CartProvider>
     <App/>
-    </CartProvider>
+  </CartProvider>
 </ProductProvider>, 
 
 document.getElementById('app'));

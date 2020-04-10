@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import CartLink from "./Cart/CartLink";
 
 export default class Nav extends Component {
     render() {
@@ -27,6 +28,10 @@ export default class Nav extends Component {
                             <li className="nav-item">
                                 <Link to="/list" className="nav-link">Products</Link>
                             </li>
+                            <div>
+                               <CartLink />
+                            </div>
+                            
                         </ul>
                     </div>
                 </div>
