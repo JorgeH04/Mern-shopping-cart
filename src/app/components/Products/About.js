@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <section className="section about-section">
-      <h1 className="section-title">about us</h1>
+      <h1 className="section-title">Sobre Nosotros</h1>
       <p>
         Lorem ipsum dolor amet pok pok blue bottle fanny pack bushwick
         mumblecore photo booth. Unicorn coloring book letterpress small batch,

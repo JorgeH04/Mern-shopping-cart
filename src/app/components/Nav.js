@@ -13,10 +13,10 @@ export default class Nav extends Component {
                     <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/about">Nosotros</Link>
                   </li>
                   <li>
-                    <Link to="/list">Products</Link>
+                    <Link to="/list">Productos</Link>
                   </li>
                   
                 </div>
