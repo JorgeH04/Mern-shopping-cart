@@ -8,14 +8,14 @@ export default function Filters() {
   } = useContext(ProductContext);
   return (
     <section className="filters-section">
-      <h2 className="section-title">search products</h2>
+      <h2 className="section-title">Buscar productos</h2>
       <form className="filters-form">
         <div>
 
 
           {/* search input */}
           <div className="form-group">
-            <label htmlFor="search">search term</label>
+            <label htmlFor="search">Buscador</label>
             <input
               type="text"
               name="search"
@@ -37,7 +37,7 @@ export default function Filters() {
 
           {/* select category */}
           <div className="form-group">
-            <label htmlFor="category">category</label>
+            <label htmlFor="category">categoría</label>
             <select
               name="category"
               id="category"
@@ -82,7 +82,7 @@ export default function Filters() {
 
         {/* price */}
         <div className="price-group">
-          <p>price</p>
+          <p>precio</p>
           <label>
             <input
               type="radio"
@@ -127,7 +127,7 @@ export default function Filters() {
         </div>
         {/* end of price   :{sorted.flat().length}  */}
       </form>
-      <h6>total products </h6>
+      <h6>total productos </h6>
       <hr />
     </section>
   );
