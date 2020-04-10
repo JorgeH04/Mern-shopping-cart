@@ -4,7 +4,7 @@ export default function Hero({ children }) {
   return (
     <div className="hero">
       <div className="banner">
-        <h1>Arte Francés - Armonizando imágenes </h1>
+        <h1>Arte Francés - SteLen </h1>
         <p>Puro relieve y profundidad</p>
         {children}
       </div>

@@ -19,7 +19,7 @@ export default function CartItem({ _id, image, title, price, amount }) {
             removeItem(_id);
           }}
         >
-          remove
+          eliminar
         </button>
       </div>
       <div>
