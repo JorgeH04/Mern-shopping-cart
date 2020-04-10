@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Hero>
         <Link to="/list" className="btn btn-primary btn-hero">
-          our products
+          Nuestros productos
         </Link>
       </Hero>
     

@@ -7,7 +7,7 @@ export default function CartLink() {
 
   return (
     <div className="cart-link-container">
-      <Link to="/cart">cart</Link>
+      <Link to="/cart">Carro</Link>
       <span className="cart-link-total">{cartItems}</span>
     </div>
   );
