@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Nav from "./components/Nav";
-//import Filters from "./components/Products/Filters";
+import Home from "./components/Home";
 import ProductList from "./components/Products/ProductList";
 import About from "./components/Products/About";
 import ProductDetails from "./components/Products/ProductDetails";
@@ -13,6 +13,9 @@ function App() {
   <Router>
 
   <Nav />
+  <Route exact path="/">
+          <Home />
+  </Route>
   <Route path="/about" component={About} />
           
   <Route path="/list" component={ProductList} exact />

@@ -5,37 +5,29 @@ import CartLink from "./Cart/CartLink";
 export default class Nav extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-3">
-                <div className="container">
-                    <Link className="navbar-brand" to="/">
-                        <i className="material-icons">
-                            Online </i> Gerat Store
-                    </Link>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ml-auto">
-
-                            <li className="nav-item active">
-                                <Link to="/" className="nav-link">Home</Link>
-                            </li>
-
-                            <li className="nav-item active">
-                                <Link to="/about" className="nav-link">About</Link>
-                            </li>
-
-                            <li className="nav-item">
-                                <Link to="/list" className="nav-link">Products</Link>
-                            </li>
-                            <div>
-                               <CartLink />
-                            </div>
-                            
-                        </ul>
-                    </div>
+            <header className="header">
+            <nav>
+              <ul>
+                <div>
+                  <li>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/about">About</Link>
+                  </li>
+                  <li>
+                    <Link to="/list">Products</Link>
+                  </li>
+                  
                 </div>
+                <div>
+                  <CartLink />
+                </div>
+              </ul>
             </nav>
+          </header>
         )
     }
 }
+
+
