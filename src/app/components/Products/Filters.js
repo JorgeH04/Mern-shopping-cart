@@ -3,8 +3,8 @@ import { ProductContext } from "../../context/products";
 export default function Filters() {
   const {
     filters: { search, category, shipping, price },
-    updateFilters
-    //sorted
+    updateFilters,
+    sorted
   } = useContext(ProductContext);
   return (
     <section className="filters-section">
@@ -127,7 +127,7 @@ export default function Filters() {
         </div>
         {/* end of price   :{sorted.flat().length}  */}
       </form>
-      <h6>total productos </h6>
+      <h6>total productos  :{sorted.flat().length}</h6>
       <hr />
     </section>
   );

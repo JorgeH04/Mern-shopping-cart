@@ -95,7 +95,7 @@ export default function ProductProvider({ children }) {
 
     setPage(0);
 
-    setSorted(newProducts);
+    setSorted(paginate(newProducts));
     console.log( newProducts)
   }, [filters, products]);
   

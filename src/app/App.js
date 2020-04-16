@@ -8,6 +8,8 @@ import About from "./components/Products/About";
 import ProductDetails from "./components/Products/ProductDetails";
 import Cart from "./components/Products/Cart";
 
+import Product from "./components/Product";
+
 function App() {
   return (
   <Router>
@@ -17,8 +19,12 @@ function App() {
           <Home />
   </Route>
   <Route path="/about" component={About} />
+
+  <Route exact path="/products">
+          <Product />
+  </Route>
+
           
-  <Route path="/list" component={ProductList} exact />
   <Route
           path="/products/:_id"
           children={<ProductDetails></ProductDetails>}

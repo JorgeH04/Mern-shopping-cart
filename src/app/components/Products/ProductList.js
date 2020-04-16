@@ -5,7 +5,6 @@ import Filters from "./Filters";
 import PageProducts from "./PageProducts";
 
 import { Link } from 'react-router-dom'
-import PropTypes from "prop-types";
 
 
 export default function ProductList() {
@@ -16,7 +15,6 @@ export default function ProductList() {
     <>
 
 <Filters />
-
 
 
     <section className="section">
