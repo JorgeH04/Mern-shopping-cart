@@ -37,6 +37,6 @@
     "react-icons": "^3.9.0",
     "react-router-dom": "^5.1.2",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   }
 }
